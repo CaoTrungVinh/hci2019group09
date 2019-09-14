@@ -1,0 +1,99 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    width: 900px;
+    margin: auto;
+}
+
+#our p {
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 37%;
+}
+
+#container #header {
+    background: #c4996c;
+    height: 120px;
+    border: 1px solid black;
+    color: white;
+}
+
+#header p {
+    margin-left: 42%;
+    margin-top: 5%;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Dancing Script', cursive;
+}
+
+#container #company {
+    background: #a8a9ad;
+    height: 400px;
+    margin-top: 10px;
+    color: white;
+    border: 1px solid black;
+}
+
+#company p {
+    margin-left: 42%;
+    margin-top: 20%;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Dancing Script', cursive;
+}
+
+#container #containt {
+    overflow: auto;
+    margin-top: 30px;
+}
+
+/*#container #containt #left{*/
+/*    background: blueviolet;*/
+/*    width: 150px;*/
+/*    height: 200px;*/
+/*    float: left;*/
+/*    clear: right;*/
+/*}*/
+/*#container #containt #right{*/
+/*    background: burlywood;*/
+/*    width: 850px;*/
+/*    height: 200px;*/
+/*    float: right;*/
+/*}*/
+#container #containt #top .Item {
+    width: 180px;
+    height: 220px;
+    float: left;
+    margin: 36px;
+    padding: 20px;
+    background: #a8a9ad;
+    border: 2px solid black;
+}
+
+#container #containt #end .Item {
+    width: 180px;
+    height: 220px;
+    float: left;
+    margin: 36px;
+    padding: 20px;
+    background: #a8a9ad;
+    border: 2px solid black;
+}
+
+#container #footer {
+    background: #115D7F;
+    height: 120px;
+    color: white;
+    border: 1px solid black;
+}
+
+#footer p {
+    margin-left: 42%;
+    margin-top: 5%;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Dancing Script', cursive;
+}
