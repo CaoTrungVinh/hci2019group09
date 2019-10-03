@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     $('.img-gal').magnificPopup({
         type: 'image',
-        gallery: {
+        project: {
             enabled: true
         }
     });
