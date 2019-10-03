@@ -1026,7 +1026,7 @@ h6 {
 .progress-table .table-row .percentage .progress .progress-bar.color-8 {
   background-color: #e66686;
 }
-.single-gallery-image {
+.single-project-image {
   margin-top: 30px;
   background-repeat: no-repeat !important;
   background-position: center center !important;
@@ -1037,7 +1037,7 @@ h6 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-.single-gallery-image:hover {
+.single-project-image:hover {
   opacity: 0.8;
 }
 .list-style {
@@ -3228,13 +3228,13 @@ dl.toggle.time-line:before {
   li:last-child {
   border-bottom: none;
 }
-.gallery-area .single-imgs {
+.project-area .single-imgs {
   margin-bottom: 30px;
 }
-.gallery-area .single-imgs img {
+.project-area .single-imgs img {
   width: 100%;
 }
-.gallery-area .single-imgs .overlay-bg {
+.project-area .single-imgs .overlay-bg {
   background: rgba(247, 99, 27, 0.85);
   opacity: 0;
   -webkit-transition: all 0.3s ease 0s;
@@ -3243,7 +3243,7 @@ dl.toggle.time-line:before {
   transition: all 0.3s ease 0s;
   z-index: 2;
 }
-.gallery-area .single-imgs:hover .overlay-bg {
+.project-area .single-imgs:hover .overlay-bg {
   opacity: 1;
 }
 .blog-home-banner {
