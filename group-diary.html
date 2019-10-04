@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="css/owl.carousel.css"/>
     <link rel="stylesheet" href="css/jquery-ui.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style_css/group_diary.css">
     <style>
         table {
             font-family: arial, sans-serif;
@@ -92,44 +94,44 @@
         #time-table {
             margin: 50px;
             width: 90%;
-            height: 500px;
         }
     </style>
+
 </head>
 <body>
 <header id="header" id="home">
     <div class="container main-menu">
         <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
-                <a href="index.html"><img src="img/logo.png" alt="" title=""/></a>
+                <a href="index.html"><h2 style="color: white">HCI2019GROUP09</h2></a>
             </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="events.html">Events</a></li>
+                    <!--                    <li><a href="courses.html">Courses</a></li>-->
+                    <!--                    <li><a href="events.html">Events</a></li>-->
                     <li><a href="project.html">Project</a></li>
-                    <li class="menu-has-children"><a href="blog-home.html">Group Dairy</a>
+                    <li class="menu-has-children"><a href="group-diary.html">Group Diary</a>
                         <!-- <ul>-->
-                        <!--			              <li><a href="blog-home.html">Blog Home</a></li>-->
+                        <!--			              <li><a href="group-diary.html">Blog Home</a></li>-->
                         <!--			              <li><a href="blog-single.html">Blog Single</a></li>-->
                         <!--			            </ul> -->
                     </li>
-                    <li class="menu-has-children"><a href="">Pages</a>
-                        <ul>
-                            <li><a href="course-details.html">Course Details</a></li>
-                            <li><a href="event-details.html">Event Details</a></li>
-                            <li><a href="elements.html">Elements</a></li>
-                            <li class="menu-has-children"><a href="">Level 2 </a>
-                                <ul>
-                                    <li><a href="#">Item One</a></li>
-                                    <li><a href="#">Item Two</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <!--                    <li class="menu-has-children"><a href="">Pages</a>-->
+                    <!--                        <ul>-->
+                    <!--                            <li><a href="course-details.html">Course Details</a></li>-->
+                    <!--                            <li><a href="event-details.html">Event Details</a></li>-->
+                    <!--                            <li><a href="elements.html">Elements</a></li>-->
+                    <!--                            <li class="menu-has-children"><a href="">Level 2 </a>-->
+                    <!--                                <ul>-->
+                    <!--                                    <li><a href="#">Item One</a></li>-->
+                    <!--                                    <li><a href="#">Item Two</a></li>-->
+                    <!--                                </ul>-->
+                    <!--                            </li>-->
+                    <!--                        </ul>-->
+                    <!--                    </li>-->
+                    <!--                    <li><a href="contact.html">Contact</a></li>-->
                 </ul>
             </nav><!-- #nav-menu-container -->
         </div>
@@ -144,12 +146,12 @@
         <div class="row d-flex align-items-center justify-content-center">
             <div class="about-content col-lg-12">
                 <h1 class="text-white">
-                    Group Dairy
+                    Group Diary
                 </h1>
                 <p class="text-white link-nav">
                     <a href="index.html">Home </a>
                     <span class="lnr lnr-arrow-right"></span>
-                    <a href="blog-home.html">Group Dairy</a>
+                    <a href="group-diary.html">Group Diary</a>
                 </p>
             </div>
         </div>
@@ -159,20 +161,20 @@
     <div class="tab">
         <button
                 class="tablinks"
-                onclick="openCity(event, 'London')"
+                onclick="openCity(event, 'Week1')"
                 id="defaultOpen"
         >
             Week 1
         </button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">
+        <button class="tablinks" onclick="openCity(event, 'Week2')">
             Week 2
         </button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+        <button class="tablinks" onclick="openCity(event, 'Week3')">
             Week 3
         </button>
     </div>
 
-    <div id="London" class="tabcontent">
+    <div id="Week1" class="tabcontent">
         <!--        <div style="width: 100%; text-align: center; font-weight: bold">-->
         <!--          Group Diary-->
         <!--        </div>-->
@@ -187,9 +189,9 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>17130045</td>
-                <td>Trần Thị Mỹ Duyên</td>
-                <td>Germany</td>
+                <td>17130016</td>
+                <td>Nguyễn Việt Chương</td>
+                <td>Create domain, learn and use github.</td>
                 <td>Hoàn thành</td>
                 <td>100%</td>
             </tr>
@@ -197,145 +199,101 @@
                 <td>1</td>
                 <td>17130045</td>
                 <td>Trần Thị Mỹ Duyên</td>
-                <td>Germany</td>
+                <td>Create domain, learn and use github.</td>
                 <td>Hoàn thành</td>
                 <td>100%</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>17130045</td>
-                <td>Trần Thị Mỹ Duyên</td>
-                <td>Germany</td>
+                <td>17130047</td>
+                <td>Lăng Thị Mỹ Duyên</td>
+                <td>Create domain, learn and use github.</td>
                 <td>Hoàn thành</td>
                 <td>100%</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>17130045</td>
-                <td>Trần Thị Mỹ Duyên</td>
-                <td>Germany</td>
+                <td>17130089</td>
+                <td>Võ Anh Huy</td>
+                <td>Create domain, learn and use github.</td>
                 <td>Hoàn thành</td>
                 <td>100%</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>17130045</td>
-                <td>Trần Thị Mỹ Duyên</td>
-                <td>Germany</td>
+                <td>17130276</td>
+                <td>Cao Trung Vĩnh</td>
+                <td>Create domain, learn and use github.</td>
                 <td>Hoàn thành</td>
                 <td>100%</td>
             </tr>
         </table>
+        <div class="team">
+            <h1>TEAM WORD</h1>
+            <img src="img/img_Week1/week1.jpg" height="487" width="938"/>
+        </div>
+            <div class="week1">
+             <h1>IMPLEMENT</h1>
+            <h2 style="color: #0F6EC6; padding: 0px 80px 0px 0px">Instructions for using github domain:</h2>
+            <h4>1. Prepare:</h4>
+            <p><i class="fas fa-circle"></i> Create a github account on the page <a href="https://github.com">Github.com.</a>
+            </p>
+            <p><i class="fas fa-circle"></i> Create a domain name on the page <a
+                    href="http://www.dot.tk/fr/index.html?lang=fr">Dot.tk.</a></p>
+            <h4>2. Link Domain to Github:</h4>
+            <!--            ---->
+            <p><i class="fas fa-circle"></i> After creating the domain name on <a href="https://my.freenom.com/">Freenom.com</a>
+                to start the setting step:</p>
+
+            <img src="img/img_Week1/1.png" height="363" width="1048"/>
+            <br>
+            <p><i class="far fa-circle"></i> After click my Domains keep click Manage Domain</p>
+           <img src="img/img_Week1/2.png" height="416"width="1051"/>
+            <p><i class="far fa-circle"></i> After click Manage Domain keep click Manage Freenoom DNS</p>
+            <img src="img/img_Week1/3.png" height="403"width="1045"/>
+            <p><i class="far fa-circle"></i> At Manage Freenoom DNS we configured as the image below</p>
+            <img src="img/img_Week1/4.png" height="428"width="1050"/>
+            <p><i class="fas fa-circle"></i> We continue the seting at github
+                <a href="https://github.com">Github.</a></p>
+            <p><i class="far fa-circle"></i> First we have a new repository</p>
+            <img src="img/img_Week1/5.png" height="521" width="1049"/>
+            <p><i class="far fa-circle"></i> After new repository, we open the repository into the setting section,
+                convert none into master branch.</p>
+            <img src="img/img_Week1/6.png" height="517" width="1050"/>
+
+            <p><i class="far fa-circle"></i> Continue on this page we enter the Domain name and Save again</p>
+            <img src="img/img_Week1/7.png" height="372" width="1049"/>
+        </div>
     </div>
 
-    <div id="Paris" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p>
-    </div>
+    <div id="Week2" class="tabcontent">
+            <h3>Week2</h3>
+            <p>Week2 is the capital of France.</p>
+        </div>
 
-    <div id="Tokyo" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
-    </div>
+        <div id="Week3" class="tabcontent">
+            <h3>Week3</h3>
+            <p>Week3 is the capital of Japan.</p>
+        </div>
 </section>
 <footer class="footer-area section-gap">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <h4>Top Products</h4>
-                    <ul>
-                        <li><a href="#">Managed Website</a></li>
-                        <li><a href="#">Manage Reputation</a></li>
-                        <li><a href="#">Power Tools</a></li>
-                        <li><a href="#">Marketing Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <h4>Quick links</h4>
-                    <ul>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Brand Assets</a></li>
-                        <li><a href="#">Investor Relations</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <h4>Features</h4>
-                    <ul>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Brand Assets</a></li>
-                        <li><a href="#">Investor Relations</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Guides</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Experts</a></li>
-                        <li><a href="#">Agencies</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-4  col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <h4>Newsletter</h4>
-                    <p>Stay update with our latest</p>
-                    <div class="" id="mc_embed_signup">
-                        <form
-                                target="_blank"
-                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                method="get"
-                        >
-                            <div class="input-group">
-                                <input
-                                        type="text"
-                                        class="form-control"
-                                        name="EMAIL"
-                                        placeholder="Enter Email Address"
-                                        onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Enter Email Address '"
-                                        required=""
-                                        type="email"
-                                />
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit">
-                                        <span class="lnr lnr-arrow-right"></span>
-                                    </button>
-                                </div>
-                                <div class="info"></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div
-                class="footer-bottom row align-items-center justify-content-between"
-        >
+        <div class="footer-bottom row align-items-center justify-content-between">
             <p class="footer-text m-0 col-lg-6 col-md-12">
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 Copyright &copy;<script>
                 document.write(new Date().getFullYear());
             </script>
                 All rights reserved | This template is made with
-                <i class="fa fa-heart-o" aria-hidden="true"></i> by
-                <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <i class="far fa-heart" aria-hidden="true"></i> by
+                <a href="https://colorlib.com" target="_blank">Group09</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
             <div class="col-lg-6 col-sm-12 footer-social">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-                <a href="#"><i class="fa fa-behance"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
             </div>
         </div>
     </div>
