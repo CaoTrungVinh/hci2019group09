@@ -1,0 +1,23 @@
+.week1{
+    padding: 50px 0px;
+}
+.week1 p{
+    font-size: 16px;
+    font-family: Tahoma;
+    margin: 10px 0px;
+    color: black;
+}
+.week1 h2{
+    margin: 10px 0px ;
+}
+.week1 p i{
+    /*color: #0b8eff;*/
+    font-size: 10px;
+    margin-left: 15px;
+}
+.week1 p .far{
+    margin-left: 25px;
+}
+week1 img{
+    margin: 50px 0px;
+}
