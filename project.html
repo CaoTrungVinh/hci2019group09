@@ -1,326 +1,402 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
-	<head>
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
-		<!-- Author Meta -->
-		<meta name="author" content="colorlib">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		<title>Group09-Project</title>
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png"/>
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib"/>
+    <!-- Meta Description -->
+    <meta name="description" content=""/>
+    <!-- Meta Keyword -->
+    <meta name="keywords" content=""/>
+    <!-- meta character set -->
+    <meta charset="UTF-8"/>
+    <!-- Site Title -->
+    <title>Group09-Project</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-			<!--
-			CSS
-			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/nice-select.css">
-			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">
-			<link rel="stylesheet" href="css/jquery-ui.css">
-			<link rel="stylesheet" href="css/main.css">
-		<style>
-			body {
-				font-family: Arial;
-				/*width: 100%;*/
-				/*margin: auto;*/
-				/*margin-top: -37px;*/
-			}
+    <link
+            href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+            rel="stylesheet"
+    />
+    <!--
+            CSS
+            ============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/magnific-popup.css"/>
+    <link rel="stylesheet" href="css/nice-select.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style_css/group_diary.css">
 
-			/* Style the tab */
-			.tab {
-				overflow: hidden;
-				border: 1px solid #ccc;
-				width: 100%;
-				height: 54px;
-				background-color: #f1f1f1;
-				/*border-bottom: 1px solid #b6b6b6;*/
-				/*border-left: 3px solid #b6b6b6;*/
-			}
-			.tab .tab-btn{
-				width: 337px;
-				height: 54px;
-				/*margin: auto;*/
-				/*border-bottom: 2px solid #f1f1f1;*/
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
 
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
 
-			}
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
 
-			/* Style the buttons inside the tab */
-			.tab button {
-				height: 54px;
-				background-color: inherit;
-				float: left;
-				border: none;
-				outline: none;
-				cursor: pointer;
-				padding: 14px 16px;
-				transition: 0.3s;
-				font-size: 17px;
-			}
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
 
-			/* Change background color of buttons on hover */
-			.tab button:hover {
-				background-color: #dddddd;
-				/*color: white;*/
-				/*border-bottom: 2px solid #F76314;*/
-				/*border-right: 2px solid #F76314;*/
-				/*border-left: 2px solid #F76314;*/
-			}
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
 
-			/* Create an active/current tablink class */
-			.tab button.active {
-				background-color:  #ccc;
-				color: black;
-				/*border-bottom: 2px solid #f1f1f1;*/
-				/*border-right: 2px solid #b6b6b6;*/
-				/*border-left: 2px solid #b6b6b6;*/
-			}
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
 
-			/* Style the tab content */
-			.tabcontent {
-				display: none;
-				padding: 6px 12px;
-				border: 1px solid #ccc;
-				border-top: none;
-				/*border-left: 1px solid #b6b6b6;*/
-				/*border-bottom: 1px solid #b6b6b6;*/
-				/*border-right: 1px solid #b6b6b6;*/
-			}
-			table {
-				font-family: arial, sans-serif;
-				border-collapse: collapse;
-				width: 100%;
-			}
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
 
-			td, th {
-				border: 1px solid #dddddd;
-				text-align: left;
-				padding: 8px;
-			}
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
 
-			tr:nth-child(even) {
-				background-color: #dddddd;
-			}
-			#time-table{
-				margin: 50px;
-				width: 90%;
-				height: 500px;
-			}
-		</style>
-		</head>
-		<body>
-		  <header id="header" id="home">
-		    <div class="container main-menu">
-		    	<div class="row align-items-center justify-content-between d-flex">
-			      <div id="logo">
-			        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
-			      </div>
-			      <nav id="nav-menu-container">
-					  <ul class="nav-menu">
-						  <li><a href="index.html">Home</a></li>
-						  <li><a href="about.html">About</a></li>
-						  <!--                    <li><a href="courses.html">Courses</a></li>-->
-						  <!--                    <li><a href="events.html">Events</a></li>-->
-						  <li><a href="project.html">Project</a></li>
-						  <li class="menu-has-children"><a href="group-diary.html">Group Diary</a>
-							  <!-- <ul>-->
-							  <!--			              <li><a href="group-diary.html">Blog Home</a></li>-->
-							  <!--			              <li><a href="blog-single.html">Blog Single</a></li>-->
-							  <!--			            </ul> -->
-						  </li>
-						  <!--                    <li class="menu-has-children"><a href="">Pages</a>-->
-						  <!--                        <ul>-->
-						  <!--                            <li><a href="course-details.html">Course Details</a></li>-->
-						  <!--                            <li><a href="event-details.html">Event Details</a></li>-->
-						  <!--                            <li><a href="elements.html">Elements</a></li>-->
-						  <!--                            <li class="menu-has-children"><a href="">Level 2 </a>-->
-						  <!--                                <ul>-->
-						  <!--                                    <li><a href="#">Item One</a></li>-->
-						  <!--                                    <li><a href="#">Item Two</a></li>-->
-						  <!--                                </ul>-->
-						  <!--                            </li>-->
-						  <!--                        </ul>-->
-						  <!--                    </li>-->
-						  <!--                    <li><a href="contact.html">Contact</a></li>-->
-					  </ul>
-			      </nav><!-- #nav-menu-container -->
-		    	</div>
-		    </div>
-		  </header><!-- #header -->
+        #time-table {
+            margin: 50px;
+            width: 90%;
+        }
 
-			<!-- start banner Area -->
-			<section class="banner-area relative about-banner" id="home">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="about-content col-lg-12">
-							<h1 class="text-white">
-								Project
-							</h1>
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="project.html"> Project</a></p>
-						</div>
-					</div>
+        .banner-area {
+            background-image: none;
+            height: 200px;
+        }
+
+        .about-content {
+            padding: 0px;
+        }
+    </style>
+	<link rel="stylesheet" href="style_css/project.css">
+
+</head>
+<body>
+<header id="header" id="home">
+    <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="index.html"><h2 style="color: white">HCI2019GROUP09</h2></a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!--                    <li><a href="courses.html">Courses</a></li>-->
+                    <!--                    <li><a href="events.html">Events</a></li>-->
+                    <li><a href="project.html">Project</a></li>
+                    <li class="menu-has-children"><a href="group-diary.html">Group Diary</a>
+                        <!-- <ul>-->
+                        <!--			              <li><a href="group-diary.html">Blog Home</a></li>-->
+                        <!--			              <li><a href="blog-single.html">Blog Single</a></li>-->
+                        <!--			            </ul> -->
+                    </li>
+                    <!--                    <li class="menu-has-children"><a href="">Pages</a>-->
+                    <!--                        <ul>-->
+                    <!--                            <li><a href="course-details.html">Course Details</a></li>-->
+                    <!--                            <li><a href="event-details.html">Event Details</a></li>-->
+                    <!--                            <li><a href="elements.html">Elements</a></li>-->
+                    <!--                            <li class="menu-has-children"><a href="">Level 2 </a>-->
+                    <!--                                <ul>-->
+                    <!--                                    <li><a href="#">Item One</a></li>-->
+                    <!--                                    <li><a href="#">Item Two</a></li>-->
+                    <!--                                </ul>-->
+                    <!--                            </li>-->
+                    <!--                        </ul>-->
+                    <!--                    </li>-->
+                    <!--                    <li><a href="contact.html">Contact</a></li>-->
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+</header>
+<!-- #header -->
+
+<!-- start banner Area -->
+<section class="banner-area relative about-banner" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    Project
+                </h1>
+                <p class="text-white link-nav"><a href="index.html">Home </a> <span class="lnr lnr-arrow-right"></span>
+                    <a href="project.html"> Project</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="time-table" style="width: 93%">
+    <div class="tab">
+        <div class="tab-btn">
+            <button class="tablinks" onclick="openCity(event, 'Requirement')" id="defaultOpen">Requirement</button>
+            <button class="tablinks" onclick="openCity(event, 'Design')">Design</button>
+            <button class="tablinks" onclick="openCity(event, 'Implement')">Implement</button>
+        </div>
+    </div>
+
+    <div id="Requirement" class="tabcontent">
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Chức năng</th>
+                <th>Người đề xuất</th>
+                <th>Người thiết kế</th>
+                <th>Người thực hiện</th>
+                <th>Thời gian dự kiến</th>
+                <th>Trạng thái</th>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Login</td>
+                <td>Cả nhóm</td>
+                <td>Trần Thị Mỹ Duyên</td>
+                <td>Trần Thị Mỹ Duyên</td>
+                <td>03/10/2019-15/10/2019</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Register</td>
+                <td>Cả nhóm</td>
+                <td>Lăng Thị Mỹ Duyên</td>
+                <td>Lăng Thị Mỹ Duyên</td>
+                <td>03/10/2019-15/10/2019</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Forgot Password</td>
+                <td>Cả nhóm</td>
+                <td>Nguyễn Việt Chương</td>
+                <td>Nguyễn Việt Chương</td>
+                <td>03/10/2019-15/10/2019</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Speaking</td>
+                <td>Cô</td>
+                <td>Võ Anh Huy</td>
+                <td>Võ Anh Huy</td>
+                <td>17/10/2019-30/11/2019</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Reading</td>
+                <td>Cô</td>
+                <td>Trần Thị Mỹ Duyên</td>
+                <td>Trần Thị Mỹ Duyên</td>
+                <td>17/10/2019-30/11/2019</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Listening</td>
+                <td>Cô</td>
+                <td>Cao Trung Vĩnh</td>
+                <td>Cao Trung Vĩnh</td>
+                <td>17/10/2019-30/11/2019</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Test</td>
+                <td>Cô</td>
+                <td>Nguyễn Việt Chương</td>
+                <td>Nguyễn Việt Chương</td>
+                <td>17/10/2019-30/11/2019</td>
+                <td>0%</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="Design" class="tabcontent">
+        <div class="img">
+            <div>
+                <h4><i class="fas fa-circle"></i> Design index</h4>
+                <div class="img-tay" style="float: left">
+                    <p><i class="far fa-circle"></i> Thiết kế trên giấy:</p>
+					<img src="img/img-project/index_tay.jpg" height="774" width="584"/>
+                </div>
+                <div class="img-figma" style="float: right">
+                    <p><i class="far fa-circle"></i> Thiết kế bằng Figma:</p>
+
+					<img src="img/img-project/index_figma.png" height="774" width="544"/>
+                </div>
+				<button style="margin-left: 15%" class="btn_lab1"><a href="img/img-project/index_tay.jpg"
+											download="design_index_tay"><i
+						class="fas fa-download"></i>Download</a></button>
+				<button style="margin-left: 45%" class="btn_lab1"><a href="img/img-project/index_figma.png"
+											download="design_index_figma"><i
+						class="fas fa-download"></i>Download</a>
+				</button>
+            </div>
+			<div>
+				<h4><i class="fas fa-circle"></i> Design login</h4>
+				<div class="img-tay" style="float: left">
+					<p><i class="far fa-circle"></i> Thiết kế trên giấy:</p>
+					<img src="img/img-project/login_tay.jpg" height="650" width="584"/>
 				</div>
-			</section>
-			<section id="time-table" style="width: 93%">
-				<div class="tab">
-					<div class="tab-btn">
-						<button class="tablinks" onclick="openCity(event, 'Requirement')" id="defaultOpen">Requirement</button>
-						<button class="tablinks" onclick="openCity(event, 'Design')">Design</button>
-						<button class="tablinks" onclick="openCity(event, 'Implement')">Implement</button>
-					</div>
+				<div class="img-figma" style="float: right">
+					<p><i class="far fa-circle"></i> Thiết kế bằng Figma:</p>
+					<img src="img/img-project/login_figma.jpg" height="650" width="544"/>
 				</div>
+				<button style="margin-left: 15%" class="btn_lab1"><a href="img/img-project/login_tay.jpg"
+																	 download="design_login_tay"><i
+						class="fas fa-download"></i>Download</a></button>
+				<button style="margin-left: 45%" class="btn_lab1"><a href="img/img-project/login_figma.jpg"
+																	 download="design_login_figma"><i
+						class="fas fa-download"></i>Download</a>
+				</button>
+			</div>
+			<div>
+				<h4><i class="fas fa-circle"></i> Design register</h4>
+				<div class="img-tay" style="float: left">
+					<p><i class="far fa-circle"></i> Thiết kế trên giấy:</p>
 
-				<div id="Requirement" class="tabcontent">
-					<table>
-						<tr>
-							<th>STT</th>
-							<th>Chức năng</th>
-							<th>Người đề xuất</th>
-							<th>Người thiết kế</th>
-							<th>Người thực hiện</th>
-							<th>Thời gian dự kiến</th>
-							<th>Trạng thái</th>
-
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>Login</td>
-							<td>Cả nhóm</td>
-							<td>Trần Thị Mỹ Duyên</td>
-							<td>Trần Thị Mỹ Duyên</td>
-							<td>03/10/2019-15/10/2019</td>
-							<td>100%</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Register</td>
-							<td>Cả nhóm</td>
-							<td>Lăng Thị Mỹ Duyên</td>
-							<td>Lăng Thị Mỹ Duyên</td>
-							<td>03/10/2019-15/10/2019</td>
-							<td>100%</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>Forgot Password</td>
-							<td>Cả nhóm</td>
-							<td>Nguyễn Việt Chương</td>
-							<td>Nguyễn Việt Chương</td>
-							<td>03/10/2019-15/10/2019</td>
-							<td>100%</td>
-						</tr>
-						<tr>
-							<td>4</td>
-							<td>Speaking</td>
-							<td>Cô</td>
-							<td>Võ Anh Huy</td>
-							<td>Võ Anh Huy</td>
-							<td>17/10/2019-30/11/2019</td>
-							<td>0%</td>
-						</tr>
-						<tr>
-							<td>5</td>
-							<td>Reading</td>
-							<td>Cô</td>
-							<td>Trần Thị Mỹ Duyên</td>
-							<td>Trần Thị Mỹ Duyên</td>
-							<td>17/10/2019-30/11/2019</td>
-							<td>0%</td>
-						</tr>
-						<tr>
-							<td>6</td>
-							<td>Listening</td>
-							<td>Cô</td>
-							<td>Cao Trung Vĩnh</td>
-							<td>Cao Trung Vĩnh</td>
-							<td>17/10/2019-30/11/2019</td>
-							<td>0%</td>
-						</tr>
-						<tr>
-							<td>7</td>
-							<td>Test</td>
-							<td>Cô</td>
-							<td>Nguyễn Việt Chương</td>
-							<td>Nguyễn Việt Chương</td>
-							<td>17/10/2019-30/11/2019</td>
-							<td>0%</td>
-						</tr>
-					</table>
+					<img src="img/img-project/register_tay.jpg" height="650" width="584"/>
 				</div>
-
-				<div id="Design" class="tabcontent">
-					<h3>Design</h3>
-					<p>Design is the capital of France.</p>
+				<div class="img-figma" style="float: right">
+					<p><i class="far fa-circle"></i> Thiết kế bằng Figma:</p>
+					<img src="img/img-project/register_figma.jpg" height="650" width="544"/>
 				</div>
+				<button style="margin-left: 15%" class="btn_lab1"><a href="img/img-project/register_tay.jpg"
+																	 download="design_register_tay"><i
+						class="fas fa-download"></i>Download</a></button>
+				<button style="margin-left: 45%" class="btn_lab1"><a href="img/img-project/register_figma.jpg"
+																	 download="design_register_figma"><i
+						class="fas fa-download"></i>Download</a>
+				</button>
+			</div>
+			<div>
+				<h4><i class="fas fa-circle"></i> Design forget</h4>
+				<div class="img-tay" style="float: left">
+					<p><i class="far fa-circle"></i> Thiết kế trên giấy:</p>
 
-				<div id="Implement" class="tabcontent">
-<!--					<h3>Implement</h3>-->
-<!--					<p>Implement is the capital of Japan.</p>-->
-
+					<img src="img/img-project/forget_tay.jpg" height="650" width="584"/>
 				</div>
-
-			</section>
-			<footer class="footer-area section-gap">
-				<div class="container">
-					<div class="footer-bottom row align-items-center justify-content-between">
-						<p class="footer-text m-0 col-lg-6 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Group09</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-						<div class="col-lg-6 col-sm-12 footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
-					</div>
+				<div class="img-figma" style="float: right">
+					<p><i class="far fa-circle"></i> Thiết kế bằng Figma:</p>
+					<img src="img/img-project/forget_figma.jpg" height="650" width="544"/>
 				</div>
-			</footer>
+				<button style="margin-left: 15%" class="btn_lab1"><a href="img/img-project/forget_tay.jpg"
+																	 download="design_forget_tay"><i
+						class="fas fa-download"></i>Download</a></button>
+				<button style="margin-left: 45%" class="btn_lab1"><a href="img/img-project/forget_figma.jpg"
+																	 download="design_forget_figma"><i
+						class="fas fa-download"></i>Download</a>
+				</button>
+			</div>
+        </div>
+    </div>
 
+    <div id="Implement" class="tabcontent">
+        <!--					<h3>Implement</h3>-->
+        <!--					<p>Implement is the capital of Japan.</p>-->
+    </div>
 
+</section>
+<footer class="footer-area section-gap">
+    <div class="container">
+        <div class="footer-bottom row align-items-center justify-content-between">
+            <p class="footer-text m-0 col-lg-6 col-md-12">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>
+                document.write(new Date().getFullYear());
+            </script>
+                All rights reserved | This template is made with
+                <i class="far fa-heart" aria-hidden="true"></i> by
+                <a href="https://colorlib.com" target="_blank">Group09</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            <div class="col-lg-6 col-sm-12 footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer Area -->
 
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  			<script src="js/easing.min.js"></script>
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>
-    		<script src="js/jquery.tabs.min.js"></script>
-			<script src="js/jquery.nice-select.min.js"></script>
-			<script src="js/owl.carousel.min.js"></script>
-			<script src="js/mail-script.js"></script>
-			<script src="js/main.js"></script>
-		  <script>
-			  function openCity(evt, cityName) {
-				  var i, tabcontent, tablinks;
-				  tabcontent = document.getElementsByClassName("tabcontent");
-				  for (i = 0; i < tabcontent.length; i++) {
-					  tabcontent[i].style.display = "none";
-				  }
-				  tablinks = document.getElementsByClassName("tablinks");
-				  for (i = 0; i < tablinks.length; i++) {
-					  tablinks[i].className = tablinks[i].className.replace(" active", "");
-				  }
-				  document.getElementById(cityName).style.display = "block";
-				  evt.currentTarget.className += " active";
-			  }
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+<script src="js/easing.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.tabs.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/main.js"></script>
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
 
-			  // Get the element with id="defaultOpen" and click on it
-			  document.getElementById("defaultOpen").click();
-		  </script>
-		</body>
-	</html>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
