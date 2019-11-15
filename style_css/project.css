@@ -17,7 +17,7 @@
     border-radius: 10px;
     border: none;
     outline: none;
-    width: 150px;
+    width: 130px;
     height: 40px;
 }
 .img button a{
@@ -25,9 +25,9 @@
 }
 .img button:hover{
     background: #0a68ff;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.75);
 }
 .img button a:hover{
     color: black;
@@ -46,9 +46,9 @@
 }
 #Implement .card .go-to:hover{
     background: #17a5f5;
-    -webkit-box-shadow: -2px 5px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 5px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: -2px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.75);
 }
 #Implement .card .go-to a:hover{
     color: black;
