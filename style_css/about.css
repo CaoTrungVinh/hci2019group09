@@ -127,9 +127,6 @@ section .row .col {
 }
 .social-media-group a:hover {
     opacity: 0.6;
-    -webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
 }
 
 
