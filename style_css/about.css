@@ -1,3 +1,6 @@
+*{
+    font-family: Tahoma;
+}
 .navbar-nav > .nav-item {
     margin-left: 15px;
 }
