@@ -41,9 +41,11 @@
     margin-top: 6px;
     width: 70px;
     height: 30px
+
 }
 #Implement .card .go-to a{
-    color: white
+    color: white;
+    font-size: 18px;
 }
 #Implement .card .go-to:hover{
     background: #17a5f5;
@@ -51,4 +53,5 @@
 }
 #Implement .card .go-to a:hover{
     color: black;
+
 }
