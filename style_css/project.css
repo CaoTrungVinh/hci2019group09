@@ -36,26 +36,8 @@
     color: black;
 }
 #Implement .card .go-to{
+    color: #007BFF;
+    font-weight: normal;
     float: right;
-    background: #4DBCFA;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    margin-top: 6px;
-    width: 70px;
-    height: 30px;
-    margin-right: 20px;
-
-}
-#Implement .card .go-to a{
-    color: white;
-    font-size: 18px;
-}
-#Implement .card .go-to:hover{
-    background: #17a5f5;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.32);
-}
-#Implement .card .go-to a:hover{
-    color: black;
-
+    padding: 15px;
 }
