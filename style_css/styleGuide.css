@@ -1,0 +1,101 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: Tahoma!important;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+#time-table {
+    margin: 50px;
+    width: 90%;
+}
+
+.banner-area {
+    background-image: none;
+    height: 200px;
+}
+
+.about-content {
+    padding: 0px;
+}
+#Week3 .but{
+    margin-top: 15px;
+    height: 129px;
+}
+#Week3 .but .btn-go{
+    font-size: 14px;
+    padding: 5px 40px;
+    background: #F7631B;
+    color: white;
+    margin-left: 20px;
+    outline: none;
+}
+#Week3 .but .btn-go:hover{
+    background: white;
+    color: #F7631B;
+    cursor: pointer;
+}
+#Week3 .but .btn-def{
+    font-size: 14px;
+    padding: 5px 30px;
+    background: white; color: black;
+    margin-left: 20px;
+    outline: none;
+}
+#Week3 .but .btn-def:hover{
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+#Week5 .con i{
+    font-size: 18px;
+    padding: 20px;
+}
