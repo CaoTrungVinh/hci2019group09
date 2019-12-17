@@ -32,9 +32,9 @@
     -moz-box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.75);
     box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.75);
 }
-.card-body button a:hover{
-    color: black;
-}
+/*.card-body button a:hover{*/
+/*    color: black;*/
+/*}*/
 #Implement .card .go-to{
     color: #007BFF;
     font-weight: normal;
