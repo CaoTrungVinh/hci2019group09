@@ -36,21 +36,18 @@
     <link rel="stylesheet" href="css/jquery-ui.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="style_css/group_diary.css">
+    <!--    <link rel="stylesheet" href="style_css/group_diary.css">-->
     <style>
         h1, h2, h3, h4, h5, h6 {
             font-family: Tahoma !important;
         }
-
         #time-table .tab {
             font-family: Tahoma !important;
         }
-
         table {
             border-collapse: collapse;
             width: 100%;
         }
-
         td,
         th {
             border: 1px solid black !important;
@@ -58,17 +55,14 @@
             padding: 8px;
             color: black;
         }
-
         tr:nth-child(even) {
             background-color: #dddddd;
         }
-
         .tab {
             overflow: hidden;
             border: 1px solid #ccc;
             background-color: #f1f1f1;
         }
-
         /* Style the buttons inside the tab */
         .tab button {
             background-color: inherit;
@@ -80,17 +74,14 @@
             transition: 0.3s;
             font-size: 17px;
         }
-
         /* Change background color of buttons on hover */
         .tab button:hover {
             background-color: #ddd;
         }
-
         /* Create an active/current tablink class */
         .tab button.active {
             background-color: #ccc;
         }
-
         /* Style the tab content */
         .tabcontent {
             display: none;
@@ -98,23 +89,110 @@
             border: 1px solid #ccc;
             border-top: none;
         }
-
         #time-table {
             margin: 50px;
             width: 90%;
         }
-
         .banner-area {
             background-image: none;
             height: 200px;
         }
-
         .about-content {
             padding: 0px;
         }
-
-        #Week1 a {
-            color: #333333;
+        .why-choose-us-content {
+            -webkit-transition-duration: 800ms;
+            -o-transition-duration: 800ms;
+            transition-duration: 800ms;
+            background-color: #ffffff;
+            padding: 65px 30px 50px;
+            border-radius: 10px;
+            box-shadow: 3px 0 15px -1px rgba(0, 0, 0, 0.15);
+            position: relative;
+            z-index: 1;
+            margin-top: 50px;
+        }
+        .why-choose-us-content:hover{
+            /*box-shadow: 0px 6px 25px 1px rgba(252,96,96,1);*/
+        }
+        .why-choose-us-content .chosse-us-icon {
+            -webkit-transition-duration: 800ms;
+            -o-transition-duration: 800ms;
+            transition-duration: 800ms;
+            height: 76px;
+            width: 76px;
+            display: inline-block;
+            text-align: center;
+            line-height: 76px;
+            border-radius: 50%;
+            color: #ffffff;
+            font-size: 30px;
+            position: absolute;
+            top: -38px;
+            left: 50%;
+            margin-left: -38px;
+        }
+        .why-choose-us-content .chosse-us-icon img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+        .price-block {
+            padding: 10px;
+            border-radius: 0px 0px 5px 5px;
+            margin-top: -1px;
+        }
+        .price-content-wrapper {
+            height: 400px;
+            overflow: hidden;
+        }
+        .price-content {
+            position: relative;
+        }
+        .price-block ul {
+            border-bottom: 1px #d7dcda dashed;
+            margin-bottom: 16px;
+            margin-top: 15px;
+            padding-bottom: 16px;
+        }
+        .price-block ul li {
+            color: #676462;
+            line-height: 24px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .task li a {
+            color: blue !important;
+        }
+        .judge {
+            color: orangered !important;
+        }
+        .btn-primary2 {
+            color: #fff;
+            background-color: #678dff;
+            border-color: orange;
+        }
+        .btn1 {
+            padding: 10px 20px;
+            display: inline-block;
+            font-weight: 400;
+            /*color: #212529;*/
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            font-size: 13px;
+            line-height: 1.5;
+            border-radius: 1.75rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+        .value {
+            color: black;
+            font-size: x-large;
+            font-weight: 500;
         }
     </style>
 
@@ -178,204 +256,288 @@
     </div>
 
     <div id="Week1" class="tabcontent">
-        <div>
-            <table class="table table-bordered text-left">
-                <thead>
-                <tr class="menu-diary text-center">
-                    <th data-toggle="tooltip" title="Number order">No</th>
-                    <th data-toggle="tooltip" title="Name">Name</th>
-                    <th data-toggle="tooltip" title="">Contribute to web group</th>
-                    <th data-toggle="tooltip" title="">Contribute to project</th>
-                    <th data-toggle="tooltip" title="">Rate</th>
-                    <th data-toggle="tooltip" title="">Result</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td class="text-center">1</td>
-                    <td><a href="https://myduyen.tk/lab5.html"
-                           target="_blank"> Trần Thị Mỹ Duyên</a><br>
-                    <td>
-                        <ul>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="http://hci2019group09.tk/group-diary.html"
-                                    target="_blank"> Group Diary</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="https://languageeducation.tk/about.html"
-                                    target="_blank"> About </a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i><a
-                                    href="https://languageeducation.tk/login.html"
-                                    target="_blank"> Login</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i><a
-                                    href="https://languageeducation.tk/vocabulary.html"
-                                    target="_blank"> Vocabulary</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="https://languageeducation.tk/vocab-1.html"
-                                    target="_blank"> Vocabulary-detail</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="https://languageeducation.tk/games.html"
-                                    target="_blank"> Games</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="https://languageeducation.tk/play-game.html"
-                                    target="_blank"> Play-game</a></li>
+<!--        <div class="row">-->
+<!--            <div class="col-12">-->
+<!--                <div class="text-center">-->
+<!--                    <p class="mt-30 value"><i class="fa fa-star" style="color: gold"></i> Đánh-->
+<!--                        giá quá trình làm việc nhóm</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="row" style="margin-bottom: 50px">
+            <div class="col-md-6 col-lg-4">
+                <div class="why-choose-us-content">
+                    <div class="chosse-us-icon">
+                        <img src="img/img_thanhvien/duyentran.jpg">
+                    </div>
+                    <h4 class="text-center">Trần Thị Mỹ Duyên</h4>
+                    <div class="price-block">
+                        <div class="price-content-wrapper">
+                            <div class="price-content">
+                                <h5>Web Language education</h5>
+                                <ul class="task pl-2">
+                                    <li> <a
+                                            href="https://languageeducation.tk/login.html"
+                                            target="_blank"> 1.Login</a></li>
+                                    <li> <a
+                                            href="https://languageeducation.tk/vocabulary.html"
+                                            target="_blank"> 2.Vocabulary</a></li>
+                                    <li>  <a
+                                            href="https://languageeducation.tk/vocab-1.html"
+                                            target="_blank"> 3.Vocabulary-detail</a></li>
+                                    <li>  <a
+                                            href="https://languageeducation.tk/games.html"
+                                            target="_blank"> 4.Games</a></li>
+                                    <li>  <a
+                                            href="https://languageeducation.tk/play-game.html"
+                                            target="_blank"> 5.Play-game</a></li>
+                                </ul>
+                            </div>
+                            <div class="price-content">
+                                <h5>Group website</h5>
+                                <ul class="task pl-2">
+                                    <li>  <a
+                                            href="http://hci2019group09.tk/group-diary.html"
+                                            target="_blank"> 6.Group Diary</a></li>
+                                    <li>  <a
+                                            href="https://languageeducation.tk/about.html"
+                                            target="_blank"> 7.About </a></li>
+                                </ul>
 
-                        </ul>
-                    </td>
-                    <td>Contribute 20%</td>
-                    <td><i class="fa fa-check"></i> Completed</td>
-                </tr>
-                <tr>
+                            </div>
+                            <div class="price-content">
+                                <h5>Evaluate</h5>
+                                <ul class="pl-2">
+                                    <li>Result: 100%</li>
+                                    <li class="judge">Contribute: 20%</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center mt-15"><a target="_blank" href="https://myduyen.tk/lab5.html" class="btn1 btn-primary2">
+                            <i class="fa fa-star"></i> Personal introduction</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="why-choose-us-content">
+                    <div class="chosse-us-icon">
+                        <img src="img/img_thanhvien/trungvinh.jpg">
+                    </div>
+                    <h4 class="text-center">Cao Trung Vĩnh</h4>
+                    <div class="price-block">
+                        <div class="price-content-wrapper">
+                            <div class="price-content">
+                                <h5>Web Language education</h5>
+                                <ul class="task pl-2">
+                                    <li>
+                                        <a
+                                                href="https://languageeducation.tk/index.html"
+                                                target="_blank">1.Home</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                                href="https://languageeducation.tk/tests.html"
+                                                target="_blank">2.Test</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                                href="https://languageeducation.tk/textTest.html"
+                                                target="_blank">3.Test Level</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                                href="https://languageeducation.tk/paragraph.html"
+                                                target="_blank">4.Paragraph</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                                href="https://languageeducation.tk/paragraph-level1.html"
+                                                target="_blank">5.Paragraph Level</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price-content">
+                                <h5>Group website</h5>
+                                <ul class="task pl-2">
+                                    <li>
+                                        <a
+                                                href="http://hci2019group09.tk/project.html"
+                                                target="_blank">6.Project</a></li>
+                                    <li>
+                                        <a
+                                                href="http://hci2019group09.tk/group-diary.html"
+                                                target="_blank">7.Group diary</a></li>
+                                </ul>
 
-                    <td class="text-center">2</td>
-                    <td><a href="https://caotrungvinh.tk/lab5.html"
-                           target="_blank"> Cao Trung Vĩnh</a><br>
-                    <td>
-                        <ul>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i>
-                                <a
-                                        href="http://hci2019group09.tk/project.html"
-                                        target="_blank"> Project</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i>
-                                <a
-                                        href="http://hci2019group09.tk/group-diary.html"
-                                        target="_blank"> Group diary</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i>
-                                <a
-                                        href="https://languageeducation.tk/index.html"
-                                        target="_blank"> Home</a>
-                            </li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i>
-                                <a
-                                        href="https://languageeducation.tk/tests.html"
-                                        target="_blank"> Test</a>
-                            </li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i>
-                                <a
-                                        href="https://languageeducation.tk/textTest.html"
-                                        target="_blank"> Test Level</a>
-                            </li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i>
-                                <a
-                                        href="https://languageeducation.tk/paragraph.html"
-                                        target="_blank"> Paragraph</a>h
-                            </li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i>
-                                <a
-                                        href="https://languageeducation.tk/paragraph-level1.html"
-                                        target="_blank"> Paragraph Level</a>
-                            </li>
+                            </div>
+                            <div class="price-content">
+                                <h5>Evaluate</h5>
+                                <ul class="pl-2">
+                                    <li>Result: 100%</li>
+                                    <li class="judge">Contribute: 20%</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center mt-15"><a target="_blank" href="https://caotrungvinh.tk/" class="btn1 btn-primary2">
+                            <i class="fa fa-star"></i> Personal introduction</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="why-choose-us-content">
+                    <div class="chosse-us-icon">
+                        <img src="img/img_thanhvien/chuong.jpg">
+                    </div>
+                    <h4 class="text-center">Nguyễn Việt Chương</h4>
+                    <div class="price-block">
+                        <div class="price-content-wrapper">
+                            <div class="price-content">
+                                <h5>Web Language education</h5>
+                                <ul class="task pl-2">
+                                    <li> <a
+                                            href="https://languageeducation.tk/writing-A1.html"
+                                            target="_blank">1.Writing level</a></li>
+                                    <li> <a
+                                            href="https://languageeducation.tk/writing.html"
+                                            target="_blank">2.Writing lesson</a></li>
+                                    <li> <a
+                                            href="https://languageeducation.tk/writing_seemore.html"
+                                            target="_blank">3.Writing lesson detail</a></li>
+                                    <li>  <a
+                                            href="https://languageeducation.tk/play-game.html"
+                                            target="_blank">4.Play-game</a></li>
+                                    <li>  <a
+                                            href="https://languageeducation.tk/contact.html"
+                                            target="_blank">5.Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="price-content">
+                                <h5>Group website</h5>
+                                <ul class="task pl-2">
+                                    <li> <a
+                                            href="http://hci2019group09.tk/styleGuide.html"
+                                            target="_blank">6.Style guide</a></li>
+                                    <li> <a
+                                            href="http://hci2019group09.tk/technology.html"
+                                            target="_blank">7.Technology</a></li>
+                                </ul>
 
-                        </ul>
-                    </td>
-                    <td>Contribute 20%</td>
-                    <td><i class="fa fa-check"></i> Completed</td>
-                </tr>
-                <tr>
-                    <td class="text-center">3</td>
-                    <td>Nguyễn Việt Chương<br>
-                    <td>
-                        <ul>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i><a
-                                        href="http://hci2019group09.tk/styleGuide.html"
-                                        target="_blank"> Style guide</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i><a
-                                        href="http://hci2019group09.tk/technology.html"
-                                        target="_blank"> Technology</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i><a
-                                        href="https://languageeducation.tk/writing-A1.html"
-                                        target="_blank"> Writing level</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i><a
-                                        href="https://languageeducation.tk/writing.html"
-                                        target="_blank"> Writing lesson</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i><a
-                                        href="https://languageeducation.tk/writing_seemore.html"
-                                        target="_blank"> Writing lesson detail</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="https://languageeducation.tk/play-game.html"
-                                    target="_blank"> Play-game</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="https://languageeducation.tk/contact.html"
-                                    target="_blank"> Contact</a></li>
-                        </ul>
-                    </td>
-                    <td>Contribute 20%</td>
-                    <td><i class="fa fa-check"></i> Completed</td>
-                </tr>
-                <tr>
-                    <td class="text-center">4</td>
-                    <td><a href="https://duyenlang.tk/html/Lab5.html"
-                           target="_blank">Lăng Thị Mỹ Duyên<br>
-                    <td>
-                        <ul>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="http://hci2019group09.tk/project.html"
-                                    target="_blank"> Project</a>
-                            </li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="http://hci2019group09.tk/result.html"
-                                    target="_blank"> Result</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="https://languageeducation.tk/reading-A1.html"
-                                    target="_blank"> Reading level</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="https://languageeducation.tk/reading.html"
-                                    target="_blank"> Read lesson</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="https://languageeducation.tk/reading-family.html"
-                                    target="_blank"> Read lesson detail</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="https://languageeducation.tk/register.html"
-                                    target="_blank"> Register</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i> <a
-                                    href="https://languageeducation.tk/forget.html"
-                                    target="_blank"> Forget password</a></li>
-                        </ul>
-                    </td>
-                    </td>
-                    <td>Contribute 20%</td>
-                    <td><i class="fa fa-check"></i> Completed</td>
-                </tr>
-                <tr>
-                    <td class="text-center">5</td>
-                    <td>Võ Anh Huy<br>
-                    <td>
-                        <ul>
-                            <li><i class="fas fa-circle" style="font-size: 7px">
+                            </div>
+                            <div class="price-content">
+                                <h5>Evaluate</h5>
+                                <ul class="pl-2">
+                                    <li>Result: 100%</li>
+                                    <li class="judge">Contribute: 20%</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center mt-15"><a target="_blank" href="https://chuongnguyen.tk/" class="btn1 btn-primary2">
+                            <i class="fa fa-star"></i> Personal introduction</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                            </i><a href="http://hci2019group09.tk/technology.html" target="_blank"> Technology</a> </li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i>
-                                <a href="http://hci2019group09.tk/group-diary.html" target="_blank"> Group diary</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i><a href="https://languageeducation.tk/index.html" target="_blank"> Home</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i><a href="https://languageeducation.tk/account.html" target="_blank"> Account: Edit</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i><a href="https://languageeducation.tk/viewlistening.html" target="_blank"> Account: History</a></li>
-                            <li><i class="fas fa-circle" style="font-size: 7px"></i><a href="https://languageeducation.tk/para-morning.html" target="_blank"> Paragrap Detail Level</a></li>
-                        </ul>
-                    </td>
-                    <td>Contribute 20%</td>
-                    <td><i class="fa fa-check"></i> Completed</td>
-                </tr>
-                </tbody>
-            </table>
+
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="why-choose-us-content">
+                    <div class="chosse-us-icon">
+                        <img src="img/img_thanhvien/duyenlang.jpg">
+                    </div>
+                    <h4 class="text-center">Lăng Thị Mỹ Duyên</h4>
+                    <div class="price-block">
+                        <div class="price-content-wrapper">
+                            <div class="price-content">
+                                <h5>Web Language education</h5>
+                                <ul class="task pl-2">
+                                    <li>  <a
+                                            href="https://languageeducation.tk/reading-A1.html"
+                                            target="_blank">1.Reading level</a></li>
+                                    <li>  <a
+                                            href="https://languageeducation.tk/reading.html"
+                                            target="_blank">2.Read lesson</a></li>
+                                    <li>  <a
+                                            href="https://languageeducation.tk/reading-family.html"
+                                            target="_blank">3.Read lesson detail</a></li>
+                                    <li>  <a
+                                            href="https://languageeducation.tk/register.html"
+                                            target="_blank">4.Register</a></li>
+                                    <li>  <a
+                                            href="https://languageeducation.tk/forget.html"
+                                            target="_blank">5.Forget password</a></li>
+                                </ul>
+                            </div>
+                            <div class="price-content">
+                                <h5>Group website</h5>
+                                <ul class="task pl-2">
+                                    <li>  <a
+                                            href="http://hci2019group09.tk/project.html"
+                                            target="_blank">6.Project</a>
+                                    </li>
+                                    <li>  <a
+                                            href="http://hci2019group09.tk/result.html"
+                                            target="_blank">7.Result</a></li>
+                                </ul>
+
+                            </div>
+                            <div class="price-content">
+                                <h5>Evaluate</h5>
+                                <ul class="pl-2">
+                                    <li>Result: 100%</li>
+                                    <li class="judge">Contribute: 20%</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center mt-15"><a target="_blank" href="https://duyenlang.tk/" class="btn1 btn-primary2">
+                            <i class="fa fa-star"></i> Personal introduction</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="why-choose-us-content">
+                    <div class="chosse-us-icon">
+                        <img src="img/img_thanhvien/anhhuy.jpg">
+                    </div>
+                    <h4 class="text-center">Võ Anh Huy</h4>
+                    <div class="price-block">
+                        <div class="price-content-wrapper">
+                            <div class="price-content">
+                                <h5>Web Language education</h5>
+                                <ul class="task pl-2">
+                                    <li> <a href="https://languageeducation.tk/index.html" target="_blank">1.Home</a></li>
+                                    <li> <a href="https://languageeducation.tk/account.html" target="_blank">2.ccount: Edit</a></li>
+                                    <li> <a href="https://languageeducation.tk/viewlistening.html" target="_blank">3.Account: History</a></li>
+                                    <li> <a href="https://languageeducation.tk/para-morning.html" target="_blank">4.Paragrap Detail Level</a></li>
+                                </ul>
+                            </div>
+                            <div class="price-content">
+                                <h5>Group website</h5>
+                                <ul class="task pl-2">
+                                    <li><a href="http://hci2019group09.tk/technology.html" target="_blank">5.Technology</a> </li>
+                                    <li>
+                                        <a href="http://hci2019group09.tk/group-diary.html" target="_blank">6.Group diary</a></li>
+                                </ul>
+
+                            </div>
+                            <div class="price-content">
+                                <h5>Evaluate</h5>
+                                <ul class="pl-2">
+                                    <li>Result: 100%</li>
+                                    <li class="judge">Contribute: 20%</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center mt-15"><a target="_blank" href="https://anhhuydeptrai.tk/" class="btn1 btn-primary2">
+                            <i class="fa fa-star"></i> Personal introduction</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -506,7 +668,6 @@
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
     }
-
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 </script>
